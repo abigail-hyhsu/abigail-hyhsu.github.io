@@ -22,7 +22,7 @@
       background: #ffffff;
     }
 
-    /* Navigation */
+    /* Navigation：與 About Me 完全一致 */
     .navbar {
       display: flex;
       justify-content: flex-end;
@@ -35,9 +35,8 @@
       color: #222;
       text-decoration: none;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 700;
-      line-height: 1.2;
       padding-bottom: 4px;
     }
 
@@ -46,29 +45,31 @@
       border-bottom: 2px solid #222;
     }
 
-    /* Main page */
+    /* Teaching page */
     .teaching-page {
-      padding: 80px 25px 130px;
+      min-height: 760px;
+      padding: 80px 25px 150px;
     }
 
+    /* 主標題：與 About Me 完全一致 */
     .teaching-page h1 {
       margin: 0 0 80px;
       color: #d99579;
-      font-size: 42px;
+      font-size: 31px;
       font-weight: 700;
       letter-spacing: 1px;
       text-align: center;
       text-transform: uppercase;
     }
 
-    .teaching-container {
+    .teaching-content {
       width: 100%;
-      max-width: 900px;
+      max-width: 820px;
       margin: 0 auto;
     }
 
     .institution {
-      margin-bottom: 80px;
+      margin-bottom: 75px;
     }
 
     .institution:last-child {
@@ -77,22 +78,23 @@
 
     .institution h2 {
       margin: 0 0 30px;
-      font-size: 27px;
+      font-size: 24px;
       font-weight: 700;
+      line-height: 1.4;
       text-align: center;
     }
 
     .role-list {
       margin: 0;
-      padding-left: 30px;
+      padding-left: 28px;
     }
 
     .role-list > li {
-      margin-bottom: 28px;
-      padding-left: 4px;
-      font-size: 17px;
+      margin-bottom: 26px;
+      padding-left: 5px;
+      font-size: 18px;
       font-weight: 400;
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
     .role-list > li:last-child {
@@ -109,33 +111,36 @@
       padding-left: 30px;
     }
 
-    .course-list li {
-      margin-bottom: 9px;
+    .course-list > li {
+      margin-bottom: 10px;
       padding-left: 4px;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 400;
-      line-height: 1.55;
+      line-height: 1.5;
     }
 
-    .course-list li:last-child {
+    .course-list > li:last-child {
       margin-bottom: 0;
     }
 
     .description {
       margin: 10px 0 0;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 400;
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
     .resource-list {
-      margin: 10px 0 4px 20px;
-      padding-left: 25px;
+      margin: 10px 0 5px 20px;
+      padding-left: 24px;
       list-style-type: square;
     }
 
     .resource-list li {
       margin-bottom: 8px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5;
     }
 
     .resource-list a {
@@ -144,7 +149,7 @@
       text-underline-offset: 3px;
     }
 
-    /* Footer */
+    /* Footer：與 About Me 完全一致 */
     footer {
       padding: 55px 20px 45px;
       background: #e8e6df;
@@ -177,21 +182,21 @@
       }
 
       .teaching-page {
+        min-height: auto;
         padding: 65px 24px 100px;
       }
 
       .teaching-page h1 {
-        margin-bottom: 60px;
-        font-size: 36px;
+        margin-bottom: 55px;
+        font-size: 37px;
       }
 
       .institution {
-        margin-bottom: 65px;
+        margin-bottom: 60px;
       }
 
       .institution h2 {
-        font-size: 23px;
-        line-height: 1.4;
+        font-size: 22px;
       }
 
       .role-list {
@@ -199,9 +204,11 @@
       }
 
       .role-list > li,
-      .course-list li,
-      .description {
-        font-size: 16px;
+      .course-list > li,
+      .description,
+      .resource-list li {
+        font-size: 17px;
+        line-height: 1.65;
       }
 
       .course-list {
@@ -224,7 +231,7 @@
 
     <h1>Teaching</h1>
 
-    <div class="teaching-container">
+    <div class="teaching-content">
 
       <section class="institution">
 
@@ -266,6 +273,7 @@
             <span class="role-title">Recitation</span>
 
             <ul class="course-list">
+
               <li>
                 Calculus for Finance Majors, Fall 2021–Spring 2022
               </li>
@@ -308,6 +316,7 @@
               <li>
                 Discrete Mathematics, Spring 2024
               </li>
+
             </ul>
           </li>
 
@@ -317,13 +326,8 @@
             </span>
 
             <ul class="course-list">
-              <li>
-                Real Analysis, Fall 2022
-              </li>
-
-              <li>
-                Probability and Measure Theory, Fall 2023
-              </li>
+              <li>Real Analysis, Fall 2022</li>
+              <li>Probability and Measure Theory, Fall 2023</li>
             </ul>
           </li>
 
@@ -333,13 +337,8 @@
             </span>
 
             <ul class="course-list">
-              <li>
-                Stochastic Processes, Spring 2023
-              </li>
-
-              <li>
-                Geometry, Spring 2023
-              </li>
+              <li>Stochastic Processes, Spring 2023</li>
+              <li>Geometry, Spring 2023</li>
             </ul>
           </li>
 
