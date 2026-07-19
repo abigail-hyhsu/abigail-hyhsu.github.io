@@ -182,44 +182,69 @@
 
     /* Mobile layout */
     @media (max-width: 760px) {
-      .hero {
-        min-height: 500px;
-      }
+  .hero {
+    min-height: 500px;
+  }
 
-      .navbar {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px 22px;
-        padding: 20px;
-      }
+  .navbar {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 22px;
+    padding: 20px;
+  }
 
-      .navbar a {
-        font-size: 15px;
-      }
+  .navbar a {
+    font-size: 15px;
+  }
 
-      .hero-content h1 {
-        margin-bottom: 45px;
-      }
+  .section {
+    min-height: auto;
+    padding: 70px 25px;
+  }
 
-      .section {
-        min-height: auto;
-        padding: 70px 25px;
-      }
+  .section-inner {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
 
-      .section-inner {
-        grid-template-columns: 1fr;
-        gap: 45px;
-      }
+  .section-image-wrapper {
+    width: 100%;
+  }
 
-      .section-image {
-        height: auto;
-        max-height: 420px;
-      }
+  .section-image {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+  }
 
-      .research .section-content,
+  .section-content {
+    width: 100%;
+  }
+
+  /* 讓 Research 手機版也維持圖片在上、文字在下 */
+  .research .section-image-wrapper {
+    order: 1;
+  }
+
+  .research .section-content {
+    order: 2;
+  }
+
+  .section-content p {
+    margin-bottom: 40px;
+    font-size: 17px;
+  }
+}
+
       .research .section-image-wrapper {
-        order: initial;
-      }
+  order: 1;
+}
+
+.research .section-content {
+  order: 2;
+}
 
       .section-content p {
         margin-bottom: 40px;
