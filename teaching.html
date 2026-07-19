@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Teaching | Hui-Yi Hsu</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #17202a;
+      background: #ffffff;
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 30px;
+      padding: 22px 4%;
+    }
+
+    .navbar a {
+      color: #222;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.2;
+      padding-bottom: 4px;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      border-bottom: 2px solid #222;
+    }
+
+    /* Main page */
+    .teaching-page {
+      padding: 80px 25px 130px;
+    }
+
+    .teaching-page h1 {
+      margin: 0 0 80px;
+      color: #d99579;
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .teaching-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .institution {
+      margin-bottom: 80px;
+    }
+
+    .institution:last-child {
+      margin-bottom: 0;
+    }
+
+    .institution h2 {
+      margin: 0 0 30px;
+      font-size: 27px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .role-list {
+      margin: 0;
+      padding-left: 30px;
+    }
+
+    .role-list > li {
+      margin-bottom: 28px;
+      padding-left: 4px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .role-list > li:last-child {
+      margin-bottom: 0;
+    }
+
+    .role-title {
+      color: #d99579;
+      font-weight: 700;
+    }
+
+    .course-list {
+      margin: 10px 0 0;
+      padding-left: 30px;
+    }
+
+    .course-list li {
+      margin-bottom: 9px;
+      padding-left: 4px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.55;
+    }
+
+    .course-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .description {
+      margin: 10px 0 0;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .resource-list {
+      margin: 10px 0 4px 20px;
+      padding-left: 25px;
+      list-style-type: square;
+    }
+
+    .resource-list li {
+      margin-bottom: 8px;
+    }
+
+    .resource-list a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 55px 20px 45px;
+      background: #e8e6df;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0 0 16px;
+      font-size: 17px;
+      font-weight: 400;
+    }
+
+    footer a {
+      color: #d99579;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    /* Mobile */
+    @media (max-width: 760px) {
+      .navbar {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px 22px;
+        padding: 20px;
+      }
+
+      .navbar a {
+        font-size: 15px;
+      }
+
+      .teaching-page {
+        padding: 65px 24px 100px;
+      }
+
+      .teaching-page h1 {
+        margin-bottom: 60px;
+        font-size: 36px;
+      }
+
+      .institution {
+        margin-bottom: 65px;
+      }
+
+      .institution h2 {
+        font-size: 23px;
+        line-height: 1.4;
+      }
+
+      .role-list {
+        padding-left: 22px;
+      }
+
+      .role-list > li,
+      .course-list li,
+      .description {
+        font-size: 16px;
+      }
+
+      .course-list {
+        padding-left: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="research.html">Research</a>
+    <a class="active" href="teaching.html">Teaching</a>
+  </nav>
+
+  <main class="teaching-page">
+
+    <h1>Teaching</h1>
+
+    <div class="teaching-container">
+
+      <section class="institution">
+
+        <h2>University of Wisconsin–Milwaukee, USA</h2>
+
+        <ul class="role-list">
+
+          <li>
+            <span class="role-title">Teaching Assistant</span>
+
+            <ul class="course-list">
+              <li>
+                MATH 105: Introduction to College Algebra, Fall 2026
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="role-title">Math Drop-In Tutor</span>
+
+            <p class="description">
+              Supported students in MATH 92/102, 94, 105, 115, and
+              211/212, covering mathematical literacy, elementary
+              mathematics, college algebra, precalculus, and calculus.
+            </p>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <section class="institution">
+
+        <h2>National Chengchi University, Taiwan</h2>
+
+        <ul class="role-list">
+
+          <li>
+            <span class="role-title">Recitation</span>
+
+            <ul class="course-list">
+              <li>
+                Calculus for Finance Majors, Fall 2021–Spring 2022
+              </li>
+
+              <li>
+                Calculus for Accounting Majors, Spring 2022
+              </li>
+
+              <li>
+                Differential Equations, Fall 2022
+              </li>
+
+              <li>
+                Applications of Differential Equations, Spring 2023
+              </li>
+
+              <li>
+                Advanced Calculus, Fall 2023–Spring 2024
+
+                <ul class="resource-list">
+                  <li>
+                    <a href="recitation-notes.pdf" target="_blank">
+                      Lecture Notes for Recitation
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="weekly-exercises.pdf" target="_blank">
+                      Weekly Assigned Exercises from Textbooks by
+                      Walter Rudin, Tom M. Apostol, and William R. Wade
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                Probability, Fall 2023
+              </li>
+
+              <li>
+                Discrete Mathematics, Spring 2024
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="role-title">
+              Grader for Graduate-Level Courses
+            </span>
+
+            <ul class="course-list">
+              <li>
+                Real Analysis, Fall 2022
+              </li>
+
+              <li>
+                Probability and Measure Theory, Fall 2023
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span class="role-title">
+              Grader for Undergraduate-Level Courses
+            </span>
+
+            <ul class="course-list">
+              <li>
+                Stochastic Processes, Spring 2023
+              </li>
+
+              <li>
+                Geometry, Spring 2023
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Department of Mathematical Sciences</p>
+    <p>University of Wisconsin–Milwaukee</p>
+
+    <a href="mailto:huiyihsu@uwm.edu">
+      Email: huiyihsu@uwm.edu
+    </a>
+  </footer>
+
+</body>
+</html>
